@@ -11,6 +11,8 @@ import { useEffect, useState } from "react";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 import axios from "axios";
+import PokemonForm from "./components/PokemonForm";
+import PokemonGrid from "./components/PokemonGrid";
 function App() {
   const [pokemones, setPokemones] = useState(null);
 
@@ -41,6 +43,9 @@ function App() {
             <Route path="/caught" Component={CaughtPokemonList}></Route>
             <Route path="/known" Component={KnownPokemonList}></Route>
             <Route path="/trainer" Component={TrainerForm}></Route>
+            <Route path="/create" Component={PokemonForm}></Route>
+            <Route path="/view" Component={PokemonGrid}></Route>
+            
           </Routes>
         </Router>
       </PokemonContext.Provider>

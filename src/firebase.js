@@ -41,6 +41,37 @@ export const addCatchedOrUnkownPokemon = async (id, name, type) => {
   }
 };
 
+export const addNewPokemon = async (pokemon) => {
+  try {
+    const collectionRef = collection(db, "newPokemon");
+
+    const docRef = await addDoc(collectionRef, pokemon);
+
+
+  } catch (e) {
+    console.error(e);
+  }
+};
+
+export const getNewPokemons = async () => {
+  const allRef = collection(db, "newPokemon");
+  const pokemones = []
+
+  try {
+    await getDocs(allRef).then((querySnapshot) => {
+      querySnapshot.docs.map((doc) => (
+        pokemones.push(doc.data())));
+    });
+    return pokemones;
+  } catch (e) {
+
+  }
+
+
+};
+
+
+
 export const getCatchedPokemons = async () => {
   const allRef = collection(db, "catched");
   const pokemones = []

@@ -1,0 +1,23 @@
+.pokemon-info {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.pokemon-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pokemon-photo {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.pokemon-type {
+  font-size: 16px;
+}

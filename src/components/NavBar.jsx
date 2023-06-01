@@ -17,6 +17,9 @@ const NavBar = () => {
       <Link to="caught">Caught Pokemons</Link>
       <Link to="known">Known Pokemons</Link>
       <Link to="trainer">Trainers</Link>
+      <Link to="create">Create Pokemon</Link>
+      <Link to="view">View created Pokemon</Link>
+
       {user ? (
         <>
           <LogoutButton />

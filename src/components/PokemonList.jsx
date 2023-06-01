@@ -9,8 +9,8 @@ const PokemonList = () => {
 
   const mios = usePokemon()
   const [pokemonList, setPokemonList] = useState([]);
-  const [pokemonsCounter, setPokemonsCounter] = useState(null);
-  const [isLoading, setIsLoading] = useState(false)
+  const [pokemonsCounter] = useState(null);
+  const [isLoading] = useState(false)
   const [catchedPokemons, setCatchedPokemons] = useState([])
   const [unknownPokemons, setUnknownPokemons] = useState([])
   const [isDataAvailable, setIsDataAvailable] = useState(false)
