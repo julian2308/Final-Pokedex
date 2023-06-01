@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+# El proyecto lo trabajamos más que todo en el siguiente repo: https://github.com/julian2308/Julians-Pokedex
+# Pero por tema de commits y problemas decidimos inicializar este repositorio desde 0
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
